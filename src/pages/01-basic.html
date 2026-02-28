@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Html</title>
+    
+</head>
+
+
+<body>
+    <header>
+        <a href="/src/index.html" id="home">HOME</a>
+        <h5>01-HTML Basics</h5>
+        <a id="next" href="./02-text-fomatting.html">Next &rarr;</a>
+    </header>
+    <div class="topic">
+        <h1>2026-02-27 | Topic: HTML Basic</h1>
+        <p class="topicpra">Understand the fundation of every web page- structure,element,and,attribute</p>
+    </div>
+    <div class="card">
+        <h3>1.1 - What is HTML?</h3>
+        <p id="pra1">HTML stand for <span
+                style="font-weight: bolder; color: rgb(28, 26, 26); font-size: 20px;">HyperText Markup
+                Language.</span>it is the standared language use and structure
+            content on the web. HTML tells the browser what each piece of content it - a heanding, paragrapha, image,
+            limk,
+            etc. - using tags.</p>
+        <div class="card1">
+            <p style="margin: 15px;">&lt;!-- This is an HTML comment --&gt;</p>
+            <p style="margin: 15px;">Hello, World!</p>
+        </div>
+        <div class="card2">
+            <p id="live" style="margin: 15px;">Output</p>
+            <h4 style="margin: 15px;">Hello, World!</h4>
+        </div>
+    </div>
+    <div class="card">
+        <h3>1.2 - The DOCTYPE declaration</h3>
+        <p id="pra1">Every HTML file must start with <span>&lt;!DOCTYPE html&gt;.</span>This tells the browser that the
+            page the uses the modern
+            HTML5 standard. Without it, the browser may render the page incorrectly</p>
+        <div class="card3">
+            <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+            &lt;title&gt;My First Page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;p&gt;Page content goes here.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </code></pre>
+        </div>
+    </div>
+    <div class="card5">
+        <h3>1.3 - HTML Page Structure</h3>
+        <p id="pra1">An HTML document has a specific structure. The<span> &lt;html&gt;</span>tag wraps everything.
+            inside it are two main sections:
+            <span> &lt;head&gt;</span>(invisible metadata) and <span>&lt;body&gt;</span>(visible content)
+        </p>
+        <div class="card4">
+            <pre><code>
+            &lt;html&gt;         &larr; Root element, wraps all
+            &lt;head&gt;       &larr; Metadata: title, charset, links
+            ...
+            &lt;/head&gt;
+            &lt;body&gt;       &larr; Visible page content
+            ...
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </code></pre>
+        </div>
+        <div class="card2">
+            <p id="live" style="margin: 15px;">Output</p>
+            <h4 style="margin: 15px;">This text is inside the &lt;body&gt;— it's what users see.</h4>
+        </div>
+    </div>
+    <div class="card">
+        <h3>1.4- HTML Element & Tags</h3>
+        <p id="pra1">An<span>element</span>consists of an opening tag, content, and a closing tag. Some are self-closing
+            and don't need a closing
+            tag (like &lt;br&gt; or &lt;img&gt;.)</p>
+        <div class="card1">
+            <pre><code>
+        &lt;p&gt;This is a paragraph element.&lt;/p&gt;
+
+       &lt;br&gt;        &larr; Self-closing: just a line break
+       &lt;img src="photo.jpg" alt="A photo"&gt;  &larr; Self-closing
+       </code></pre>
+        </div>
+        <div class="card2">
+            <p id="live" style="margin: 15px;">Output</p>
+            <h4 style="margin: 15px;">This is a paragraph element.</h4>
+            <h4 style="margin: 15px; color: #5e5b5b;">(br adds a line break · img renders an image)</h4>
+        </div>
+    </div>
+    <div class="card">
+        <h3>1.5 - Attributes</h3>
+        <p id="pra1"><span>Attributes</span>give extra information to element. They are written inside the opening tag
+            as <span>name="value"</span>
+            pairs. Common attributes include <span>id, class, src, href,</span> and <span>alt,</span></p>
+        <div class="card1">
+            <pre><code>
+        &lt;a href="https://example.com" target="_blank"&gt;Visit Site&lt;/a&gt;<br>
+        &lt;img src="logo.png" alt="Company logo" width="200"&gt;<br>
+        &lt;p id="intro" class="highlight"&gt;Welcome!&lt;/p&gt;
+           </code></pre>
+        </div>
+        <div class="card2">
+            <p id="live" style="margin: 15px;">Output</p>
+            <h4 style="margin: 15px;">Welcome! (class="highlight" would apply CSS styles)</h4>
+        </div>
+    </div>
+    <!-- Nesting element -->
+    <div class="card">
+        <h3>1.6 - Nesting Elements</h3>
+        <p id="pra1">Elements can be placed inside other element - this called<span>nesting.</span>Always close inner
+            element before outer
+            ones. Imporper nesting causes browser rendering issuse.</p>
+        <div class="card1">
+            <pre><code>
+✅ Correct nesting:
+&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text.&lt;/p&gt;
+
+❌ Wrong nesting:
+&lt;p&gt;This is &lt;strong&gt;bold&lt;/p&gt;&lt;/strong&gt;
+</code></pre>
+        </div>
+        <div class="card2">
+            <p id="live" style="margin: 15px;">Output</p>
+            <h4 style="margin: 15px;">This is <span>bold</span>text.</h4>
+        </div>
+    </div>
+</body>
+
+</html>

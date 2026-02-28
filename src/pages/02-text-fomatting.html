@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Html</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        background-color: rgb(14, 14, 70);
+        height: 6vh;
+        color: #fff;
+        border-bottom: solid 2px gray;
+    }
+
+    #home {
+        margin: 10px 0 0 30px;
+        color: rgb(100, 100, 150);
+    }
+
+    h5 {
+        margin: 11px 0 0 40%;
+        font-size: 17px;
+        color: rgb(58, 81, 232);
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(100, 100, 150);
+        /* margin: 10px 0 0 43%; */
+        font-size: 17px;
+    }
+
+    #Prev{
+        text-decoration: none;
+        color: rgb(100, 100, 150);
+        margin: 10px -80px 0 36%;
+        font-size: 17px;
+    }
+
+    #next {
+        text-decoration: none;
+        color: rgb(100, 100, 150);
+        margin: 10px 0 0 6%;
+        font-size: 17px;
+    }
+
+    .topic {
+        background-color: rgb(14, 14, 70);
+        color: #fff;
+        height: 15vh;
+        padding: 5px;
+    }
+
+    h1 {
+        margin: 10px 0 0 30px;
+    }
+
+    .topicpra {
+        margin: 10px 0 0 30px;
+        color: rgb(100, 100, 150);
+    }
+</style>
+
+<body>
+    <header>
+        <a href="/src/index.html" id="home">HOME</a>
+        <h5>02-text-Fomatting</h5>
+        <a id="Prev" href="./01-basic.html">&larr; Prev</a>
+        <a id="next" href="./03-list.html">Next &rarr;</a>
+    </header>
+    <div class="topic">
+        <h1>2026-02-27 | Topic: Text Formatting</h1>
+        <p class="topicpra">control how text looks - heading, paraggrapha, emphasis, and more.</p>
+    </div>
+    <div class="card">
+        <h3>2.1 - Headings (h1 -h6)</h3>
+        <p class="pra">HTML has six heanding levels from <span>&lt;h1&gt;</span>(largest, most important) to <span>&lt;h1&gt;</span>(smallest). Use h1 for the page title, and lower levels for subsections. Never skip levels for styling purpose -use CSS instead.</p>
+        <div class="card1">
+            <p style="margin: 15px;">&lt;!-- This is an HTML comment --&gt;</p>
+            <p style="margin: 15px;">Hello, World!</p>
+        </div>
+        <div class="card2">
+            <p id="live" style="margin: 15px;">Output</p>
+            <h4 style="margin: 15px;">Hello, World!</h4>
+        </div>
+</body>
+
+</html>

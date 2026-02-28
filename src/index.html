@@ -1,11 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <title>HTML LEARNING SELF DOCS</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: rgb(14, 14, 70);
+        height: 20vh;
+    }
+
+    h1 {
+        color: #ffff;
+        text-align: center;
+        /* margin: 5px; */
+        padding: 10px;
+    }
+
+    #header {
+        color: rgb(100, 100, 150);
+  
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .card {
+        box-shadow: 5px 5px 5px -1px #e7dfdf;
+        height: 78px;
+        width: 65%;
+        margin: 25px 0px 0px 20%;
+        border-left: 6px solid red;
+    }
+
+    #bio {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .content {
+        display: flex;
+        margin: 3% 0 0 20%;
+        padding: 5px;
+    }
+
+    .card2 {
+        box-shadow: 5px 5px 5px -1px #e7dfdf;
+        height: 150px;
+        width: 390px;
+        /* 🔥 width add karo */
+        margin: 0 15px 0 40px;
+        border-top: 6px solid rgb(62, 62, 255);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    h2 {
+        /* margin: 5px; */
+        margin-top: 25px;
+        font-size: 18px;
+        /* margin-left: 35px; */
+    }
+
+    span {
+        background-color: rgb(179, 229, 248);
+        padding: 8px;
+        margin: 10px;
+        border-radius: 8px;
+        color: blue;
+        font-size: 15px;
+    }
+
+    p {
+        margin-left: 40px;
+        color: rgb(69, 67, 67);
+    }
+
+    footer {
+        background-color: rgb(14, 14, 70);
+        color: rgb(100, 100, 150);
+        ;
+        height: 8vh;
+        margin-top: 15px;
+    }
+
+    h5 {
+        text-align: center;
+        padding: 5px;
+        font-size: 17px;
+        /* margin-top: 8px; */
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* .link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    } */
+</style>
+
 <body>
-    <h1></h1>
+    <header>
+        <img src="" alt="">
+        <h1><img src="/src/public/book.png" alt="" width="35px" height="30px">HTML Self-Learning Docs</h1>
+        <p id="header">A beginner-to-intermediate guide-with live code examples in every topic</p>
+    </header>
+    <div class="card">
+        <p id="bio">Welcome! Each topic below is a self-contained HTML file. Click any card to open it. Every page
+            includes definitions,<br>
+            code examples, and live rendered previews-no internet required</p>
+    </div>
+    <section>
+        <div class="content">
+            <a href="./pages/01-basic.html" class="link">
+                <div class="card2">
+                    <h2><span>01</span>HTML Basic</h2>
+                    <p>DOCTYPE declaration, page structure, HTML elements, <br>attributes, and nesting rules</p>
+                </div>
+            </a>
+            <a href="./pages/02-text-fomatting.html" class="link">
+                <div class="card2">
+                    <h2><span>02</span>Text Formating</h2>
+                    <p>Heading, paragrapha,bold,italic,underline,span, line <br>break, and horizontal.</p>
+                </div>
+            </a>
+        </div>
+        <div class="content">
+            <a href="./pages/03-list.html" class="link">
+                <div class="card2">
+                    <h2><span>03</span> Lists</h2>
+                    <p>Ordered, unordered, nested,<br>description lists.</p>
+                </div>
+            </a>
+            <a href="./pages/04-links.html" class="link">
+                <div class="card2">
+                    <h2><span>04</span> Links & Navigation</h2>
+                    <p>Anchor tags, href, target, mailto,<br>in-page anchors.</p>
+                </div>
+            </a>
+        </div>
+        <div class="content">
+            <a href="./pages/05-images-media.html">
+                <div class="card2">
+                    <h2><span>05</span>Images & Media</h2>
+                    <p>img tag src,alt,width/height,figure.figcaption,and<br>responsive</p>
+                </div>
+            </a>
+            <a href="./pages/06-table.html">
+                <div class="card2">
+                    <h2><span>06</span>Tables</h2>
+                    <p>table,thead,tbody,tr,th,td,colspan and rowspans for<br>complex layouts</p>
+                </div>
+            </a>
+        </div>
+        <div class="content">
+            <a href="./pages/07-forms-input.html">
+                <div class="card2">
+                    <h2><span>07</span>Form & Input</h2>
+                    <p>form,text,email,password,checkbox,radio,select<br>textarea,and button,element.</p>
+                </div>
+            </a>
+            <a href="./pages/08-semantic.html">
+                <div class="card2">
+                    <h2><span>08</span>Semantic HTML</h2>
+                    <p>header,nav,main,section,article,aside,footer-<br>meaningful structure for the web.</p>
+                </div>
+            </a>
+        </div>
+        <div class="content">
+            <a href="./pages/09-html5-audio-video.html">
+                <div class="card2">
+                    <h2><span>09</span>HTML5 Audio & Video</h2>
+                    <p>audio,video,soruce,control,autoplay,loop,and<br>canva element basic.</p>
+                </div>
+            </a>
+            <a href="./pages/10-meta-head.html">
+                <div class="card2">
+                    <h2><span>10</span>Meta & Head</h2>
+                    <p>title,meta charset,viewport,description,keywords,link<br>tags,and styles in head.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <h5><img src="/src/public/book.png" alt="" width="35px" height="30px">HTML Self-Learning Docs . Pure HTML, no
+            framworks . Open any files in your browser</h5>
+    </footer>
 </body>
+
 </html>
